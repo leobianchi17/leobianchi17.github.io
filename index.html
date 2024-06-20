@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Blog Minimalista</title>
+    <title>Juan Gutierrez's Blog</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
             max-width: 600px;
             width: 100%;
-            margin: 20px auto;
+            margin: 20px;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             background-color: #fff;
+            text-align: left;
         }
         h1 {
             font-size: 24px;
             text-align: center;
-            margin-bottom: 20px;
         }
         h2 {
             font-size: 20px;
             text-align: left;
-            margin-bottom: 10px;
-            color: #303640;
+            color: gray;
             font-weight: normal;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
         }
         ul {
             list-style-type: none;
@@ -62,6 +69,9 @@
             h2 {
                 font-size: 18px;
             }
+            p, a {
+                font-size: 14px;
+            }
             a {
                 padding: 8px;
             }
@@ -70,22 +80,23 @@
 </head>
 <body>
     <div class="container">
-        <h1>Leonel Bianchi</h1>
+        <h1>Juan Gutierrez</h1>
+        <p>
+            This is my <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a>.
+            If you want to chat or comment on something, I suggest leaving a comment in the post doc or
+            sending me an email (I respond within 24 hours of receiving it).
+        </p>
 
-        <h2>Mis posts</h2>
+        <h2>Posts</h2>
         <ul>
-            <li><a href="https://docs.google.com/document/d/1exampleID1"><span class="date">2024-01-01</span> - Mi Post 1</a></li>
-            <li><a href="https://docs.google.com/document/d/2exampleID2"><span class="date">2024-01-02</span> - Mi Post 2</a></li>
-            <li><a href="https://docs.google.com/document/d/3exampleID3"><span class="date">2024-01-03</span> - Mi Post 3</a></li>
-        </ul>
-
-        <h2>Posts de otros que me gustaron</h2>
-        <ul>
-            <li><a href="https://www.jotdown.es/2015/08/rodeate-de-gente-que-disfruta-facilmente-incluso-de-las-modas/"><span class="date">2024-01-04</span> - Rodéate de gente que disfruta fácilmente (incluso de las modas)</a></li>
+            <li><a href="https://docs.google.com/document/d/1exampleID1"><span class="date">2024-01-01</span> - Post 1</a></li>
+            <li><a href="https://docs.google.com/document/d/2exampleID2"><span class="date">2024-01-02</span> - Post 2</a></li>
+            <li><a href="https://docs.google.com/document/d/3exampleID3"><span class="date">2024-01-03</span> - Post 3</a></li>
         </ul>
     </div>
 </body>
 </html>
+
 
 
 
