@@ -147,7 +147,7 @@
         }
 
         /* Visitor counter styles */
-        .visitor-counter {
+        .view-counter {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 20px;
             padding: 5px 15px;
@@ -177,8 +177,9 @@
             <div class="progress-container">
                 <div class="progress-bar" id="progress-bar"></div>
             </div>
+                        <!-- Page view counter -->
             <div class="mt-8">
-                <span class="visitor-counter">👥 <span id="visitor-count">0</span> visitors</span>
+                <span class="view-counter">👁️ <span id="view-count">0</span> views</span>
             </div>
         </div>
     </header>
@@ -355,18 +356,12 @@
             document.getElementById('articleView').removeEventListener('scroll', updateReadingProgress);
         }
 
-        function updateVisitorCount() {
-            const storageKey = 'visitorCount';
-            let count = parseInt(localStorage.getItem(storageKey) || '0');
-            
-            // Generate a unique identifier for this browser session
-            if (!sessionStorage.getItem('browserSession')) {
-                sessionStorage.setItem('browserSession', Date.now().toString());
-                count++;
-                localStorage.setItem(storageKey, count.toString());
-            }
-            
-            document.getElementById('visitor-count').textContent = count;
+        // Update view count
+        function updateViewCount() {
+            let count = parseInt(localStorage.getItem('viewCount') || '0');
+            count++;
+            localStorage.setItem('viewCount', count.toString());
+            document.getElementById('view-count').textContent = count;
         }
 
         // Initialize the app
