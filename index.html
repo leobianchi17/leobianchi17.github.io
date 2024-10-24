@@ -146,14 +146,6 @@
             margin: 20px auto;
         }
 
-        /* Visitor counter styles */
-        .view-counter {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 5px 15px;
-            font-size: 0.9rem;
-            color: var(--accent-color);
-        }
 
         @keyframes spin {
             to {
@@ -176,10 +168,6 @@
             </div>
             <div class="progress-container">
                 <div class="progress-bar" id="progress-bar"></div>
-            </div>
-                        <!-- Page view counter -->
-            <div class="mt-8">
-                <span class="view-counter">👁️ <span id="view-count">0</span> views</span>
             </div>
         </div>
     </header>
@@ -356,19 +344,10 @@
             document.getElementById('articleView').removeEventListener('scroll', updateReadingProgress);
         }
 
-        // Update view count
-        function updateViewCount() {
-            let count = parseInt(localStorage.getItem('viewCount') || '0');
-            count++;
-            localStorage.setItem('viewCount', count.toString());
-            document.getElementById('view-count').textContent = count;
-        }
-
         // Initialize the app
         document.addEventListener('DOMContentLoaded', () => {
             updateProgress();
             createExplanationGrid();
-            updateVisitorCount();
 
             // Log base path for debugging
             console.log('Base path:', getBasePath());
