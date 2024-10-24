@@ -1,9 +1,3 @@
----
-title: Una mirada provocativa pero certera sobre el arte de contar las cosas
-date: '2024-10-10'
-category: Profesional
----
-
 # Una mirada provocativa pero certera sobre el arte de contar las cosas
 
 Nunca nadie me enseñó cómo comunicar bien y todo lo que supe alguna vez leer por ahi resulto siempre ser muy superficial. En los ultimos años me tocó contar cosas ante un público: exposiciones, clases, discursos, paneles, presentar productos, reuniones, explicar cosas, entre otras tantas. Voy a tratar de contarte qué aprendí para hacerlas bien y evitar contar las cosas de manera banal, aburrida, vacia de contenido y emoción. Sin lugar a dudas el arte de contar bien las cosas es una herramienta letal en cualquier parte de la vida, no solo por su valor como habilidad sino por el placer que nos genera: siempre queremos contar lo que nos pasa, expresarnos. 
