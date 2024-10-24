@@ -355,14 +355,17 @@
             document.getElementById('articleView').removeEventListener('scroll', updateReadingProgress);
         }
 
-        // Update visitor count
         function updateVisitorCount() {
-            let count = parseInt(localStorage.getItem('visitorCount') || '0');
-            if (!localStorage.getItem('visitorCounted')) {
+            const storageKey = 'visitorCount';
+            let count = parseInt(localStorage.getItem(storageKey) || '0');
+            
+            // Generate a unique identifier for this browser session
+            if (!sessionStorage.getItem('browserSession')) {
+                sessionStorage.setItem('browserSession', Date.now().toString());
                 count++;
-                localStorage.setItem('visitorCount', count);
-                localStorage.setItem('visitorCounted', 'true');
+                localStorage.setItem(storageKey, count.toString());
             }
+            
             document.getElementById('visitor-count').textContent = count;
         }
 
